@@ -18,12 +18,10 @@ void main() {
   ); 
 final order = Order('Chocklate'); 
 sc.sink.add(order);
-  
-  sc.stream.map((order) => order.type).
+    sc.stream.map((order) => order.type).
     transform(baker).
     listen(
     onError: (err)=> print(err),
     (cake) =>  print(cake.runtimeType),
-    
   );
 }
