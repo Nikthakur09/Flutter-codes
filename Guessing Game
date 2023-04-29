@@ -1,0 +1,14 @@
+import 'dart:html';
+
+void main() {
+ final ButtonElement button =  querySelector('button');
+ final InputElement input =  querrySelector('input');
+  button.onClick.
+  take(4).
+    where((event) => input.value =='Nikhil').
+    listen(
+      (event) => print("Hurray !!! Correct answer"),
+       onDone: () => print(" Nope, You Loose"),
+      );
+  
+}
