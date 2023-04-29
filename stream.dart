@@ -4,11 +4,7 @@ class Order{
   String type;
   Order(this.type);
 }
-class Cake {
-  
-}
-
-
+class Cake {}
 void main() {
  final sc = StreamController(); 
   final baker = StreamTransformer.fromHandlers(
@@ -18,8 +14,7 @@ void main() {
     }else{
       print('I cant bake this type');
     }
-    
-  }
+    }
   ); 
 final order = Order('Chocklate'); 
 sc.sink.add(order);
